@@ -1,0 +1,237 @@
+/*
+Colors used:
+Primary Color (Grey, White, Black): #D4EE5E, #FFFFFF, #000000;
+Secondary Color (Green and Red): #8BC34A, #F4FAD2, #FF4242;
+*/
+header {
+  background-color: #F0F2EB;
+  padding: 50px;
+  margin: 0px auto;
+  border-bottom: .5px solid #F0F2EB;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.64);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.64);
+  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.64);
+  font-size: 12px;
+  text-align: left;
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+body {
+  background-color: #F0F2EB;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 400; /* Sets the font weight to 300 */
+  line-height: 1.4; /* Sets the line-height to 1.6 * the font-size */
+  color: #000000;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  padding:20px;
+	align-content: left;
+  margin: 0 auto;
+}
+
+
+h1, h2, h3, h4 {
+  line-height: 1.0;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #8BC34A;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #994c30;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  text-align: left;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.center {
+  text-align: center;
+}
+
+#about-page h3 { margin-top: 0;}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid
+  #4a4a4a
+}
+
+#hero {
+  margin: 80px;
+  text-align: #hero;
+  display: inline-block;
+  width: 100%
+}
+
+h2#Contact {
+    /* add styling in future iteration */
+}
+
+h2#Me {
+    /* add styling in future iteration */
+}
+
+h3#Skills {
+    text-align: #hero;/* add styling in future iteration */
+}
+
+p#Me {
+  margin: 40px;
+  text-align: #hero;
+}
+
+svg#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+header {
+  text-align: left;
+  padding: 10px 0 10px;
+  }
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 10px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .columns .col-lg-3 {
+  width: calc(100%/4); /* same as 50% */
+  }
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
