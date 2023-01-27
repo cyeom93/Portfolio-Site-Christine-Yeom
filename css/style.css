@@ -6,20 +6,22 @@ Secondary Color (Green and Red): #8BC34A, #F4FAD2, #FF4242;
 
 header {
   background-color: #F0F2EB;
-  padding: 0px 5px 12px 0px;
-  margin: 0px auto;
+  padding: 50px;
+  margin: auto;
   border-bottom: .5px solid #F0F2EB;
   -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.64);
   -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.64);
   box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.64);
-  text-align: center;
-  position: fixed;
-  width: 100%
+  font-size: 12px;
+  /* text-align: left; */
+  /* position: fixed; */
+  width: 100%;
 }
 
 nav {
   display: block;
   width: 100%;
+  font-size: 15px;
 }
 
 nav > ul {
@@ -36,6 +38,7 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 700;
 }
+
 body {
   background-color: #F0F2EB;
   font-family: 'Manrope', sans-serif;
@@ -45,11 +48,29 @@ body {
   color: #000000;
   margin: 0 auto;
   text-align: center;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
+
+/* .container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  padding:20px;
+	align-content: left;
+  margin: 0 auto;
+} */
+
 
 h1, h2, h3, h4 {
   line-height: 1.0;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
@@ -64,6 +85,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -81,39 +103,6 @@ a:active { /* selected link */
   color: #994c30;
 }
 
-.button.view:hover {
-  background-color: #ff7f50;
-  color: #ffffff;
-}
-
-.button.view:visited {
-  background-color: #ff7f50;
-  color: #ffffff;
-}
-
-.button.view {
-  background-color: transparent;
-  color: #ff7f50;
-  text-transform: uppercase;
-  border: 2px solid #ff7f50;
-}
-.button.contact:hover {
-  background-color: #ff7f50;
-  color: #ffffff;
-}
-
-.button.contact:visited {
-  background-color: #ff7f50;
-  color: #ffffff;
-}
-
-.button.contact {
-  background-color: transparent;
-  color: #ff7f50;
-  text-transform: uppercase;
-  border: 2px solid #ff7f50;
-}
-
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
@@ -122,25 +111,49 @@ a:active { /* selected link */
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  text-align: left;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
+}
+
+#about-page h3 { margin-top: 0;}
+
+#work {
+  margin-bottom: 80px;
 }
 
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid
   #4a4a4a
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#myWork {
+  font-size: 2em;
 }
 
-h2#hero {
-  margin: 85px;
-  text-align: center;
+#hero {
+  margin: 5px;
   display: inline-block;
   width: 100%
-}
-
-h2#Mywork {
-    /* add styling in future iteration */
 }
 
 h2#Contact {
@@ -152,5 +165,205 @@ h2#Me {
 }
 
 h3#Skills {
-    /* add styling in future iteration */
+    text-align: center;/* add styling in future iteration */
 }
+
+p#Me {
+  margin: 40px;
+  text-align: #hero;
+}
+
+picture{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+svg#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* description */
+.description{
+  width: 600px;
+  margin-right: 98px;
+  padding-right: 98px;
+}
+
+/* earmaq image */
+.earmarq{
+  max-width: 535px;
+}
+
+/* lists */
+.li-skills{
+  list-style:  none;
+}
+
+
+/* Small Devices (640px or less) */
+ @media screen and (max-width: 640px) {
+   header {
+     padding: 20px;
+     left: -20px;
+     height: 80px;
+   }
+   /* .nav-bar {
+
+   } */
+   .logo {
+    max-width: 130px;
+    float: left;
+    margin-left: -20px;
+
+    }
+    nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    margin-right: 10px;
+  }
+
+  .name{
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #work{
+    margin-bottom: 50px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-left: 7px;
+  }
+  .description{
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .animated{
+    margin-right: 5px;
+    width: 50%;
+  }
+
+  .li-skills{
+    margin-bottom: 15px;
+    margin-right: 3px;
+    padding: 0;
+    font-size: 12px;
+    list-style: none;
+  }
+
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+header {
+  text-align: left;
+  padding: 10px 0 10px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 10px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+/* [class*="col-"] {
+  float: left;
+  } */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  /* nav{
+    padding: 50px;
+  } */
+  .columns .col-lg-3 {
+  width: calc(100%/4); /* same as 50% */
+  }
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+@media only screen and (max-width: 1500px) {
+  .description{
+    margin-right: 0;
+    padding-right: 75px;
+    width: 450px;
+  }
+
+  .pic{
+    width: 450px;
+  }
+
+
+@media only screen and (max-width: 1220px){
+  .row{
+    display: flex;
+  }
+
+  .pic {
+    margin-left: 7px;
+  }
+  .description{
+    margin-right: 0;
+    padding-right: 5px;
+    width: 420px;
+    height: 300px;
+  }
