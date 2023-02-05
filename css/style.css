@@ -125,6 +125,10 @@ svg#about-picture {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 header {
   background-color: #F0F2EB;
@@ -208,12 +212,12 @@ nav {
 
 [class*="col-"] {
   float: left;
-  }
+}
 
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .container {
@@ -223,13 +227,13 @@ nav {
 }
 
 /* ==============================
-Large devices (1024px or larger)
+Large devices (1200px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
 }
 
-/* ==============================
-X-large devices (1440px or larger)
-=================================*/
-@media only screen and (min-width: 1440px) {
-}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
