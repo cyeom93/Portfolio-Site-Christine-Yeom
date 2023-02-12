@@ -7,18 +7,21 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Quicksand:wght@400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d9b2c88304.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="header">
 <header>
 <div class="container">
-  <source srcset="img/CYF_signature2.png" media="(max-width:180px)">
-  <img src="img/CYF_signature2.png" alt="Christine Yeom-Feyjoo" class="logo">
+    <div class="navtoggle" id="myNavtoggle">
+      <source srcset="img/CYF_signature2.png" media="(max-width:180px)">
+        <img src="img/CYF_signature2.png" alt="Christine Yeom-Feyjoo" class="logo">
 <nav>
 <ul class="navigation">
   <li><a href="index.html">Work</a></li>
   <li><a href="about.html">About</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 </ul>
 </nav>
 </div>
@@ -697,6 +700,7 @@
 </div>
 </footer>
 
+<script src="js/jquery-3.6.3.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
