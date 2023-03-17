@@ -91,7 +91,7 @@ a {
   text-decoration: none; /* No underlining */
 }
 a:hover {
-  color: #8BC34A;
+  color: #2C4015;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
@@ -101,13 +101,13 @@ a:active { /* selected link */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30; /* width of the border, type, color */
   transition-duration: 0.2s;
   transition-property: opacity;
+  color: #3A3A3A; /* needed to override the default link color */
   text-align: left;
 }
 
@@ -133,29 +133,27 @@ a:active { /* selected link */
 
 #hero {
   margin: 80px;
-  text-align: #hero;
   display: inline-block;
   width: 100%
 }
 
-h2#Contact {
+/*h2#Contact {
     /* add styling in future iteration */
-}
 
-h2#Me {
+/*h2#Me {
     /* add styling in future iteration */
-}
 
-h3#Skills {
-    text-align: #hero;/* add styling in future iteration */
+h3#titles {
+    text-align: center;
+    margin: 3px;
 }
 
 p#Me {
   margin: 40px;
-  text-align: #hero;
+  text-align: center;
 }
 
-svg#about-picture {
+/*svg#about-picture {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -194,7 +192,7 @@ svg#about-picture {
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-}
+}*/
 
 /* ==============================
 Medium devices (640px and larger)
@@ -204,6 +202,7 @@ header {
   text-align: left;
   padding: 10px 0 10px;
   }
+}
 
 nav {
   width: auto;
@@ -211,12 +210,13 @@ nav {
   margin-top: 10px;
 }
 
-.col-md-6 {
-  /*width: 50%;
+/*.col-md-6 {
+  width: 50%;
 }*/
 
+
 [class*="col-"] {
-  float: left;
+  float: auto;
   }
 
 .row::after {
@@ -232,9 +232,4 @@ Large devices (1024px or larger)
   .columns .col-lg-3 {
   width: calc(100%/4); /* same as 50% */
   }
-}
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
 }
