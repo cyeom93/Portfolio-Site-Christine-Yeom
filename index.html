@@ -1,110 +1,182 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christine Yeom-Feyjoo｜Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Quicksand:wght@400&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d9b2c88304.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christine Yeom-Feyjoo｜Portfolio</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&family=Quicksand:wght@400&display=swap"
+      rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/d9b2c88304.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body id="header">
-<header>
-<div class="container">
-    <div class="navtoggle" id="myNavtoggle">
-      <source srcset="img/CYF_signature2.png" media="(max-width:180px)">
-        <img src="img/CYF_signature2.png" alt="Christine Yeom-Feyjoo" class="logo">
-<nav>
-<ul class="navigation">
-  <li><a href="index.html">Work</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="https://drive.google.com/file/d/137vHd0DmzR3UhCAlDlCM07sP8BGhBW-A/view?usp=sharing"target="_blank">Resume</a></li>
-  <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-</ul>
-</nav>
-</div>
-</header>
-
-<main>
-  <div id="hero">
-    <div class="container">
-      <h1>Christine Yeom-Feyjoo</h1>
-      <p>Digital Marketer and UX Designer based in New York.</p>
-    </div>
-  </div>
-
-<div id="work">
-  <div class="container">
-    <h2>My Work</h2>
-      <div>
-        <div class="row"><!-- open row that holds (2) columns for each project-->
-          <div class="column col-md-6 col-lg-7">
-            <picture>
-              <source srcset="img/Earmarq_Thumbnail.jpg" media="(max-width: 450px)">
-                <img src="img/Earmarq_Thumbnail.jpg" alt="Thumbnail of Earmarq"/>
-            </picture>
-          </div>
-
-          <div class="column col-md-6 col-lg-5">
-            <h3>Earmarq</h3>
-            <p>Earmarq, a goal-oriented financial savings app. <br> Documentation of the user-centered design process showcasing competitor analyses, user interviews, user persona and journey, user flows, card sorting, site and affinity mapping. Iterative designs and prototype done in Figma, presentation hosted on Behance. </p>
-            <a href="https://www.behance.net/gallery/147967285/Earmarq-App-Portfolio" target="_blank" class="button">View</a> <!-- button or label-->
-          </div>
-        </div><!--end of row 1-->
-
-        <div class="row">
-          <div class="column col-md-6 col-lg-7">
-            <picture>
-              <source srcset="img/HangudThumbnail.jpg" media="(max-width:450px)">
-              <img src="img/HangudThumbnail.jpg" alt="Thumbnail of Hangud Presentation" class="pic">
-            </picture>
-          </div>
-
-          <div class="column col-md-6 col-lg-5">
-          <h3>Hangud</h3>
-          <p>Hangud, a Korean language learning app. <br> Presentation of the design thinking process showcasing user flows, wireframes and usability testing.</p>
-          <a href="https://drive.google.com/file/d/1Hy2BIVgH7JnomClnUWudJJ75XO6mEZyQ/view?usp=sharing" target="_blank" class="button">View</a> <!-- button or label-->
+  <body id="header">
+    <header>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <img
+            src="img/CYF_signature2.png"
+            alt="Christine Yeom-Feyjoo"
+            class="logo">
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/137vHd0DmzR3UhCAlDlCM07sP8BGhBW-A/view?usp=sharing"
+                  target="_blank"
+                  >Resume</a>
+              </li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </div><!--end of row 2-->
+      </div>
+    </header>
 
-        <div class="row">
-          <div class="column col-md-6 col-lg-7">
-            <picture>
-            <source srcset="img/NaturesDanceThumbnail.jpg" media="(max-width:600px)">
-            <img src="img/NaturesDanceThumbnail.jpg" alt="Thumbnail of Nature's Dance Video" class="pic">
-            </picture>
+    <main>
+      <div id="hero">
+        <div class="container">
+          <h1>Christine Yeom-Feyjoo</h1>
+          <p>Digital Marketer and UX Designer based in New York.</p>
+        </div>
+      </div>
+
+      <div id="work">
+        <div class="container">
+          <h2>My Work</h2>
+          <div>
+            <div class="row">
+              <!-- open row that holds (2) columns for each project-->
+              <div class="column col-md-6 col-lg-7">
+                <picture>
+                  <source
+                    srcset="img/Earmarq_Thumbnail.jpg"
+                    media="(max-width: 450px)">
+                  <img
+                    src="img/Earmarq_Thumbnail.jpg"
+                    alt="Thumbnail of Earmarq">
+                </picture>
+              </div>
+
+              <div class="column col-md-6 col-lg-5">
+                <h3>Earmarq</h3>
+                <p>
+                  Earmarq, a goal-oriented financial savings app. <br>
+                  Documentation of the user-centered design process showcasing
+                  competitor analyses, user interviews, user persona and
+                  journey, user flows, card sorting, site and affinity mapping.
+                  Iterative designs and prototype done in Figma, presentation
+                  hosted on Behance.
+                </p>
+                <a
+                  href="https://www.behance.net/gallery/147967285/Earmarq-App-Portfolio"
+                  target="_blank"
+                  class="button"
+                  >View</a>
+                <!-- button or label-->
+              </div>
+            </div>
+            <!--end of row 1-->
+
+            <div class="row">
+              <div class="column col-md-6 col-lg-7">
+                <picture>
+                  <source
+                    srcset="img/HangudThumbnail.jpg"
+                    media="(max-width:450px)">
+                  <img
+                    src="img/HangudThumbnail.jpg"
+                    alt="Thumbnail of Hangud Presentation"
+                    class="pic">
+                </picture>
+              </div>
+
+              <div class="column col-md-6 col-lg-5">
+                <h3>Hangud</h3>
+                <p>
+                  Hangud, a Korean language learning app. <br>
+                  Presentation of the design thinking process showcasing user
+                  flows, wireframes and usability testing.
+                </p>
+                <a
+                  href="https://drive.google.com/file/d/1Hy2BIVgH7JnomClnUWudJJ75XO6mEZyQ/view?usp=sharing"
+                  target="_blank"
+                  class="button"
+                  >View</a>
+                <!-- button or label-->
+              </div>
+            </div>
+            <!--end of row 2-->
+
+            <div class="row">
+              <div class="column col-md-6 col-lg-7">
+                <picture>
+                  <source
+                    srcset="img/NaturesDanceThumbnail.jpg"
+                    media="(max-width:600px)">
+                  <img
+                    src="img/NaturesDanceThumbnail.jpg"
+                    alt="Thumbnail of Nature's Dance Video"
+                    class="pic">
+                </picture>
+              </div>
+
+              <div class="column col-md-6 col-lg-5">
+                <h3>Nature's Dance</h3>
+                <p>
+                  A 2D stop motion animation about seasonal changes.<br>
+                  Created on Adobe Premiere Pro, video hosted on Vimeo.
+                </p>
+                <a
+                  href="https://vimeo.com/194612656"
+                  target="_blank"
+                  class="button"
+                  >View</a
+                ><!--button or label-->
+              </div>
+            </div>
+            <!--end of row 3-->
           </div>
+        </div>
+      </div>
+      <br>
+    </main>
 
-          <div class="column col-md-6 col-lg-5">
-            <h3>Nature's Dance</h3>
-            <p>A 2D stop motion animation about seasonal changes. <br> Created on Adobe Premiere Pro, video hosted on Vimeo.</p>
-            <a href="https://vimeo.com/194612656" target="_blank" class="button">View</a><!--button or label-->
-          </div>
-      </div><!--end of row 3-->
-</div>
-</div>
-</div>
-<br>
-</main>
+    <footer id="contact">
+      <div class="container">
+        <h2>Stay in Touch</h2>
 
-<footer id="contact">
-<div class="container">
-<h2>Stay in Touch</h2>
+        <div>
+          <a href="mailto:cyeom93@gmail.com" class="button contact">Email Me</a>
+        </div>
+        <br>
+        <div>
+          <!--Social Media and placeholders-->
+          <a href="https://www.linkedin.com/in/christine-yeom" target="_blank">
+          </a>
+        </div>
+      </div>
+    </footer>
 
-<div>
-<a href="mailto:cyeom93@gmail.com" class="button contact">Email Me</a>
-</div>
-<br>
-<div><!--Social Media and placeholders-->
-<a href="https://www.linkedin.com/in/christine-yeom" target="_blank">
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#007BB5"/><g><rect fill="#FFFFFF" height="14" width="4" x="7" y="11"/><path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z" fill="#FFFFFF"/><circle cx="9" cy="8" fill="#FFFFFF" r="2"/></g></g><g/><g/><g/><g/><g/><g/></svg>
-</a>
-</footer>
-
-<script src="js/jquery-3.6.3.min.js"></script>
-<script src="js/scripts.js"></script>
-</body>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
