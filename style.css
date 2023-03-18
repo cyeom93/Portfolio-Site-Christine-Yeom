@@ -25,7 +25,7 @@ nav {
 
 nav > ul {
   list-style-type: none;
-  padding: 0;
+  padding: 0px;
 }
 
 nav > ul > li {
@@ -143,10 +143,6 @@ a:active { /* selected link */
 /*h2#Me {
     /* add styling in future iteration */
 
-h3#titles {
-    text-align: center;
-    margin: 3px;
-}
 
 p#Me {
   margin: 40px;
